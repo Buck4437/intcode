@@ -9,14 +9,14 @@ class Intcode:
 
     def __init__(self, raw_program):
         self.raw_program = raw_program
-        self.__initiate_variables()
+        self._initiate_variables()
 
     def __initiate_variables(self):
         self.ip = 0
         self.memory = list(map(lambda x: int(x), self.raw_program.split(",")))
 
     def reset(self):
-        self.__initiate_variables()
+        self._initiate_variables()
 
     def run(self):
         while self.ip < len(self.memory):

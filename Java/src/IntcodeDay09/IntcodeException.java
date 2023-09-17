@@ -1,4 +1,4 @@
-package intcodeD2;
+package IntcodeDay09;
 
 public class IntcodeException extends Exception {
 	

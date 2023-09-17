@@ -1,17 +1,17 @@
-package main_d2;
+package Day02;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.Arrays;
 
-import intcodeD2.*;
+import IntcodeDay02.*;
 
 public class Main {
 	public static void main(String[] args) {
 		try {
-			BufferedReader fileReader = new BufferedReader(new FileReader("src/day2.txt"));
+			BufferedReader fileReader = new BufferedReader(new FileReader("Day2.txt"));
 			String rawIntcodeProgram = String.join("", fileReader.readLine());
 			long[] intcodeProgram = Arrays.stream(rawIntcodeProgram.split(","))
-										 .mapToLong(Integer::parseInt)
+										 .mapToLong(Long::parseLong)
 										 .toArray();
 
 			// Part 1

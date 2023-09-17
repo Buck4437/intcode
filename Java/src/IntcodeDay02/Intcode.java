@@ -1,4 +1,4 @@
-package intcodeD2;
+package IntcodeDay02;
 
 public class Intcode {
 	
